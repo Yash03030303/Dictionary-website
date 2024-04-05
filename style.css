@@ -1,0 +1,121 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+*:not(i) {
+    font-family: "Poppins", sans-serif;
+}
+
+img{
+    /*width: 10%;*/
+    max-width: 15%;
+    height: auto;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(184deg,#79d3ea,#3006ef);
+}
+.container {
+    background-color: #D2DAFF;
+    width: 90vmin;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    padding: 80px 50px;
+    border-radius: 10px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+.search-box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.search-box input {
+    padding: 5px;
+    width: 70%;
+    border: none;
+    outline: none;
+    border-bottom: 3px solid #3c01ff;
+    font-size: 16px;
+    background-color: #D2DAFF;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+}
+.search-box button {
+    padding: 15px 0;
+    width: 25%;
+    background-color: #3c01ff;
+    border: none;
+    outline: none;
+    color: #fff;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+}
+
+.search-box button:hover{
+    background-color:rgb(5, 198, 5);
+}
+
+.result {
+    position: relative;
+}
+.result h3 {
+    font-size: 30px;
+    color: rgb(77, 76, 76);
+}
+.result .word {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+.result button {
+    background-color: transparent;
+    color: #3c01ff;
+    border: none;
+    outline: none;
+    font-size: 18px;
+}
+
+.result button:hover{
+    color: rgb(28, 184, 250);
+}
+
+.result .details {
+    display: flex;
+    gap: 10px;
+    color: rgb(82, 81, 81);
+    margin: 5px 0 20px 0;
+    font-size: 14px;
+}
+.word-meaning {
+    color: #000;
+}
+.word-example {
+    color: rgb(82, 81, 81);
+    font-style: italic;
+    border-left: 5px solid #0303fc;
+    padding-left: 20px;
+    margin-top: 30px;
+}
+.error {
+    margin-top: 80px;
+    text-align: center;
+}
+
+.heading {
+    text-align: center;
+    font-size: 2em; /* Adjust font size as needed */
+    margin: 0; /* Remove default margin */
+    padding: 20px 0; /* Add padding for spacing */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #3c01ff;
+}
+
+/* Media query for responsiveness */
+@media screen and (max-width: 768px) {
+    .heading {
+        font-size: 1.5em; /* Adjust font size for smaller screens */
+    }
+}
